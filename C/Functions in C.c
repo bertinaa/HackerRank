@@ -1,23 +1,13 @@
 #include <stdio.h>
-/* a bc
-Add `int max_of_four(int a, int b, int c, int d)` here. 6 4 2 13
-*/
-int max_of_four(int a, int b, int c, int d){
-    if (a>b && a>c && a>d){
-        return a;
-    }
-    else if (b>a && b>c && b>d){
-        return b;
-    }
-    else if (c>b && c>a && c>d){
-        return c;
-    }
-    else{
-        return d;
-    }
-}
-    
 
+int max_of_four(int a, int b, int c, int d){
+    int max1,max2,ans;
+    max1 = a>b? a:b;
+    max2 = c>d? c:d;
+    ans = max1>max2? max1:max2;
+    return ans;
+    
+}
 int main() {
     int a, b, c, d;
     scanf("%d %d %d %d", &a, &b, &c, &d);
