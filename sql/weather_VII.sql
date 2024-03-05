@@ -3,4 +3,4 @@ Query the list of CITY names ending with vowels (a, e, i, o, u) from STATION. Yo
 */
 SELECT DISTINCT CITY
 FROM STATION
-WHERE CITY REGEXP '[aeiouAEIOU]$';
+WHERE CITY REGEXP '[aeiou]$';
